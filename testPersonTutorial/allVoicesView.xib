@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="allVoicesMultiTouch">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="QbQ-8t-OG8"/>
+                <outlet property="voice1" destination="XWC-8e-SmK" id="tjB-Z5-rWs"/>
+                <outlet property="voice2" destination="8ld-4f-khE" id="Qaf-W7-kbc"/>
+                <outlet property="voice3" destination="KxQ-Sr-xD5" id="vaU-W3-A8e"/>
+                <outlet property="voice4" destination="XC5-rN-YZq" id="3b5-j0-a3L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view appearanceType="aqua" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWC-8e-SmK" customClass="voiceGateMultiTouch">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view appearanceType="aqua" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ld-4f-khE" customClass="voiceGateMultiTouch">
+                    <rect key="frame" x="0.0" y="135" width="320" height="127"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view appearanceType="aqua" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KxQ-Sr-xD5" customClass="voiceGateMultiTouch">
+                    <rect key="frame" x="0.0" y="270" width="320" height="127"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view appearanceType="aqua" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XC5-rN-YZq" customClass="voiceGateMultiTouch">
+                    <rect key="frame" x="0.0" y="405" width="320" height="127"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XWC-8e-SmK" firstAttribute="height" secondItem="8ld-4f-khE" secondAttribute="height" id="7Li-yQ-C7f"/>
+                <constraint firstAttribute="bottom" secondItem="XC5-rN-YZq" secondAttribute="bottom" id="999-z9-U0D"/>
+                <constraint firstAttribute="trailing" secondItem="XWC-8e-SmK" secondAttribute="trailing" constant="1" id="9BO-Om-neO"/>
+                <constraint firstItem="XWC-8e-SmK" firstAttribute="width" secondItem="XC5-rN-YZq" secondAttribute="width" id="DHA-IZ-rvS"/>
+                <constraint firstItem="KxQ-Sr-xD5" firstAttribute="top" secondItem="8ld-4f-khE" secondAttribute="bottom" id="LcA-pP-xTU"/>
+                <constraint firstItem="XWC-8e-SmK" firstAttribute="width" secondItem="KxQ-Sr-xD5" secondAttribute="width" id="QQL-ho-Yom"/>
+                <constraint firstItem="XWC-8e-SmK" firstAttribute="width" secondItem="8ld-4f-khE" secondAttribute="width" id="RnO-KQ-JHh"/>
+                <constraint firstAttribute="trailing" secondItem="XC5-rN-YZq" secondAttribute="trailing" constant="1" id="Uv5-QQ-rLX"/>
+                <constraint firstItem="XWC-8e-SmK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="VxM-kh-zGu"/>
+                <constraint firstItem="8ld-4f-khE" firstAttribute="top" secondItem="XWC-8e-SmK" secondAttribute="bottom" id="ZVb-Qf-UsS"/>
+                <constraint firstAttribute="trailing" secondItem="KxQ-Sr-xD5" secondAttribute="trailing" constant="1" id="ect-4h-bu6"/>
+                <constraint firstItem="XWC-8e-SmK" firstAttribute="height" secondItem="KxQ-Sr-xD5" secondAttribute="height" id="gPB-Cv-q4F"/>
+                <constraint firstAttribute="trailing" secondItem="8ld-4f-khE" secondAttribute="trailing" constant="1" id="n0e-wI-kce"/>
+                <constraint firstItem="XC5-rN-YZq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="oyC-31-HiO"/>
+                <constraint firstItem="KxQ-Sr-xD5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="qP5-e0-FdR"/>
+                <constraint firstItem="XWC-8e-SmK" firstAttribute="height" secondItem="XC5-rN-YZq" secondAttribute="height" id="v3L-6U-2jC"/>
+                <constraint firstItem="XC5-rN-YZq" firstAttribute="top" secondItem="KxQ-Sr-xD5" secondAttribute="bottom" id="xBR-sT-wzc"/>
+                <constraint firstItem="XWC-8e-SmK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xp2-kC-r4h"/>
+                <constraint firstItem="8ld-4f-khE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="zSc-5R-8xV"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
